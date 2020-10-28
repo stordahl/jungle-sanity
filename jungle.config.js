@@ -103,7 +103,7 @@ module.exports = async () => {
     },
     dataSources: [
         {
-            format: "json", name: "post", items: sanityPost,
+            format: "json", name: "post", items: sanityPost, queryArgs: { slug: 'String!' }
         }
     ]
     };
