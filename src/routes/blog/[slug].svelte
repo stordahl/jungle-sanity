@@ -61,5 +61,4 @@
 				<p>{ text }</p>
 			{/each}
 		{/each}
-	
 </main>
