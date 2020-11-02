@@ -46,11 +46,6 @@
 			max-width: none;
 		}
     }
-    
-	ul {
-		margin: 0 0 1em 0;
-		line-height: 1.5;
-    }
 
 </style>
 
@@ -59,12 +54,12 @@
 </svelte:head>
 
 <main>
-	<ul>
-			<h1>{QUERYRES.post.title}</h1>
-		<!-- {#each QUERYRES.post.body as { children }}
+	<h1>{QUERYRES.post.title}</h1>
+	
+		{#each QUERYRES.post.body as { children }}
 			{#each children as { text }}
 				<p>{ text }</p>
 			{/each}
-		{/each} -->
-	</ul>
+		{/each}
+	
 </main>

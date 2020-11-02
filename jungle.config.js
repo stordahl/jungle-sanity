@@ -26,7 +26,7 @@ const templateHtml = fs.readFileSync('src/template.html', { encoding: 'utf8', fl
 module.exports = async () => {
     //fetch our data
     const sanityPost = await client.fetch("*[_type == 'post']");
-    console.log(sanityPost);
+    // console.log(sanityPost);
     //return everything else within the module
     return{
     clientInputOptions: (filename, extension) => {
